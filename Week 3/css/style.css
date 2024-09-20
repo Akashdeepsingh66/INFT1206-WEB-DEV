@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif; /*use Arial faint with fallback to sans-serif */
+    line-height: 1.6; /*set line height for better readability*/
+}
+
+h1 {
+    color:navy; /*set the color of h1 text to navy */
+
+
+}
+
+h1,h2 {
+    text-align: center;/ * heading and set specific colors */
+
+}
+h2{
+    color: teal; /*set the color of elements to teal */
+}
+table {
+    width: 80%; /* set table to 80% of its container */
+    padding: 12px; /* Add padding inside table cells for spacing */
+    text-align: left; /*align test in table cells to the left*/
+}
+th, td{
+    border: 1px; /* set table to 80% of its container */
+    padding: 12px; /* Add padding inside table cells for spacing */
+    text-align: left; /*align test in table cells to the left*/
+
+}
+th{
+    background-color: #f4f4f4f4; /*light grey background color for table headers */
+
+}
+tr:nth-child(even){
+    background-color: #f9f9f9f9; /*light grey background color for even table rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* slightly darker grey for hovered rows */
+}
