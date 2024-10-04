@@ -56,13 +56,18 @@ $stringResult = demonstrateStringFunctions($originalString);
  * @param string $inputString: The string to convert
  * @return string The uppercase version of the input
  */
-
+function toUpperCase($inputString) {
+    return ucfirst(strtolower($inputString)); // Converts to lowercase first, then capitalizes the first letter
+}
 
 /**
  * Function 2: Check if an input number is even
  * @param int $number: The number to check
  * @return bool: True if the number is even, false otherwise
  */
+function isEven($number) {
+    return $number % 2 === 0; // Returns true if the number is even
+}
 
 
 
@@ -77,7 +82,12 @@ echo "Word Count:" . $stringResult['wordCount'] . "\n";
 echo "Imploded String:" . $stringResult['implodeArray'] . "\n";
 
 //echo a call to your FUNCTION1
+$upperCaseString = toUpperCase("dog");
+echo "Uppercase String: $upperCaseString\n";
 //echo a call to your FUNCTION2
+$numberToCheck = 10; // Example number
+$isNumberEven = isEven($numberToCheck) ? 'True' : 'False';
+echo "Is $numberToCheck even? $isNumberEven\n";
 
 echo "</pre>";
 
