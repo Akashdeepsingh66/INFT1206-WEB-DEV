@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INFT1205 - Lab 5</title>
+  <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Order Form</h1>
+
+  <form method="post" action="process_order.php">
+
+    <label for="product">Product:</label>
+    <select name="product" id="product" required>
+      <option value="T-Shirt">T-Shirt</option>
+      <option value="Mug">Mug</option>
+      <option value="Hat">Hat</option>
+      <option value="Notebook">Notebook</option>
+
+    </select>
+
+    <label for="quantity">Quantity: </label>
+    <input type="number" name="quantity" id="quantity" min="1" required>
+
+    <label for="customer_name">Customer Name</label>
+    <input type="text" name="customer_name" id="customer_name" required>
+
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="address">Shipping Address: </label>
+    <textarea name="address" id="address" cols="30" rows="1" required></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+
+
+</div>
+</body>
+</html>

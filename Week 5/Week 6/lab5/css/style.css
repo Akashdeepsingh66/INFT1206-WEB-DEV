@@ -1,0 +1,46 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Changed font family to Montserrat */
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #add8e6; /* Light blue background */
+}
+
+h1 {
+    color: firebrick;
+    font-weight: bold;
+}
+
+form {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid firebrick;
+}
+
+button {
+    background-color: firebrick;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #c72a2a; /* Darker shade for hover effect */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: firebrick;
+    outline: none;
+}
